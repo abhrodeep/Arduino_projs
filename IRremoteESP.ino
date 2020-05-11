@@ -1,15 +1,5 @@
-/*
- * IRremoteESP8266: IRServer - demonstrates sending IR codes controlled from a webserver
- * Version 0.2 June, 2017
- * Copyright 2015 Mark Szabo
- *
- * An IR LED circuit *MUST* be connected to ESP8266 pin 4 (D2).
- *
- * TL;DR: The IR LED needs to be driven by a transistor for a good result.
- *
- * Suggested circuit:
- *     https://github.com/markszabo/IRremoteESP8266/wiki#ir-sending
- *
+
+ /*
  * Common mistakes & tips:
  *   * Don't just connect the IR LED directly to the pin, it won't
  *     have enough current to drive the IR LED effectively.
@@ -36,7 +26,7 @@
 #include <WiFiClient.h>
 
 const char* ssid = "AAABBB";
-const char* password = "SUCKYOURASS";
+const char* password = "password";
 MDNSResponder mdns;
 
 ESP8266WebServer server(80);
